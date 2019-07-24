@@ -12,3 +12,7 @@ NSIS Implementation:
 This headerfile sets the properties using the `System` plugin (which is shipped with the installer by default). This removes the need to call an external setup routine during install for setting the shortcut properties.
 
 The system plugin is pretty low-level and poorly documented. Because of this, even more effort was put into documenting this headerfile.
+
+Displaying Properties in File Manager:
+======================================
+In my opinion, the easiest way to check&set the file properties for debugging purposes was to download the .reg-file from [here](https://winaero.com/blog/how-to-show-more-details-for-shortcuts-in-windows-8-1-windows-8-and-windows-7/), to add the needed properties to every line of the file and execute the file.
