@@ -101,6 +101,7 @@ ${If} $6 = 0 ; Is the pointer to the allocated Memory NULL? (= No space left for
 ${EndIf}
 
 StrLen $7 ${AppID} ; Now store the stringlength of the AppID into $7, not the Bytecount!
+IntOp $7 $7 + 1 ; Add \0
 System::Call '*$6(&w$7 "${AppID}")' ; memcpy (wstring)AppID into $6 the temporary storage of the PropertyValue
 System::Call '*$5${SYSSTRUCT_PROPVARIANT}(${VT_LPWSTR},,p r6)' ; Load Property-Val into $5
 
