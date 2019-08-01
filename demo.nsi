@@ -16,6 +16,6 @@ ${EndIf}
 DetailPrint Returncode=$0
 
 ;SetRegView 64 ;If the Toast-Application is 64 Bit
-WriteRegStr HKLM "SOFTWARE\Classes\CLSID\{32860D72-BA7F-64CC-AF50-72B6FB1ECE26}" "LocalServer32" "C:\ProgramFiles\Snoretoast.exe" ; Add the needed Registry Key (https://docs.microsoft.com/en-us/windows/win32/com/localserver32)
+WriteRegStr HKLM "SOFTWARE\Classes\CLSID\{32860D72-BA7F-64CC-AF50-72B6FB1ECE26}\LocalServer32" "" "C:\ProgramFiles\Snoretoast.exe" ; Add the needed Registry Key (https://docs.microsoft.com/en-us/windows/win32/com/localserver32)
 
 SectionEnd
